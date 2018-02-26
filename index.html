@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+    
+    
+<style>
+    
+    body {
+        background-color: rgb(213,244,206);
+
+    }
+    
+    p {
+        font-family: fantasy;
+        font-size: 40px;
+        color: rgb(150,193,157);
+    }
+    
+    input {
+        padding: 10px;
+        margin: 20px;
+        text-align: center;
+        box-shadow: -5px 5px 5px rgb(33,131,125);
+    }
+    
+    
+    .container {
+        margin-top: 30px;
+        text-align: center;
+        width: 60%;
+    }
+    
+    div {
+        padding: 5px;
+    }
+
+    </style>
+    
+<body>
+
+<!-- <div class="container"><div class="row">
+    <div>STONT <input type="text" name="raz" onkeyup=licz(this.form)></div>
+    <div>TUTEJ <input type="text" name="dwaz" onkeyup=licz(this.form)></div>
+    <div>IOTO <input type="text" name="trzyz" onkeyup=licz(this.form)></div>
+</div>
+
+<button onclick="myFunction()">SUPER KURWA</button> -->
+    
+<div class="container">
+    <form>
+    <div>
+        <input type="text" name="plus1" onchange=dodawanie(this.form)> + <input type="text" name="plus2" onchange=dodawanie(this.form)> = <input type="text" name="plussum">
+    </div> 
+    
+        <div>
+            <input type="text" name="plus3" onchange=odejmowanie(this.form)> - <input type="text" name="plus4" onchange=odejmowanie(this.form)> = <input type="text" name="minussum">
+        </div> 
+    
+        <div>
+            <input type="text" name="plus5" onkeyup=dzielenie(this.form)> / <input type="text" name="plus6" onkeyup=dzielenie(this.form)> = <input type="text" name="dzielsum">
+        </div> 
+    
+        <div>
+            <input type="text" name="plus7" onkeyup=mnozenie(this.form)> * <input type="text" name="plus8" onkeyup=mnozenie(this.form)> = <input type="text" name="multisum">
+        </div> 
+    
+    </form>
+
+
+<script>
+      
+    function dodawanie(x){
+x.plussum.value= parseFloat(x.plus1.value) + parseFloat(x.plus2.value)
+}
+    function odejmowanie(x){
+x.minussum.value= x.plus3.value - x.plus4.value
+}
+    function dzielenie(x){
+x.dzielsum.value= x.plus5.value / x.plus6.value
+}
+    function mnozenie(x){
+x.multisum.value= x.plus7.value * x.plus8.value
+}
+    
+</script>
+    
+    <p>Well... you folks might be wondering where is + combination. I'll tell you.</p> 
+    <p>Its none of your f**king buissnes - thats where.</p>
+    
+</div>
+
+</body>
+</html>
